@@ -17,7 +17,7 @@ remotely communicating with your embeded application through "inform" events, ex
 SAMPLE EMBED
 ========
 
-<!DOCTYPE html>
+<![CDATA[<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>JSEmbed Example Embed</title>
@@ -46,7 +46,7 @@ SAMPLE EMBED
 		<div id="embedtarget"></div>	
 	</body>
 </html>
-
+]]>
 
 
 COMING SOON
