@@ -3,7 +3,7 @@ JSEmbed
 
 A quick tool for embedding HTML5 (and other JS) applications onto pages with a single line.
 
-USAGE
+Usage
 =======
 
 JSEmbed lets you dynamically add JS applications to a page with a single line, include libs, and 
@@ -14,11 +14,10 @@ libraries, such as Construct2, Tresensa and Haxe/Flambe.
 It includes helper methods such as the ability to set and get the scale of the canvas, enforcing maximum dimensions, and
 remotely communicating with your embeded application through "inform" events, external pause/unpause requests, etc.
 
-SAMPLE EMBED
+Sample Embed
 ========
-
-<![CDATA[<!DOCTYPE html>
-<html lang="en">
+...
+<html><body>
 	<head>
 		<title>JSEmbed Example Embed</title>
 	  <script type="text/javascript" src="jsembed.js"></script>
@@ -44,10 +43,8 @@ SAMPLE EMBED
 	</head>
 	<body style="padding: 0; margin: 0; background-color:#000000">
 		<div id="embedtarget"></div>	
-	</body>
-</html>
-]]>
-
+</body></html>
+...
 
 COMING SOON
 ========
