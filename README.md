@@ -17,7 +17,7 @@ remotely communicating with your embeded application through "inform" events, ex
 Sample Embed
 ========
 ```
-<html><body>
+<html>
 	<head>
 		<title>JSEmbed Example Embed</title>
 	  <script type="text/javascript" src="jsembed.js"></script>
@@ -26,12 +26,15 @@ Sample Embed
 			var params = {
 				base: "", // Set a base url of all app content. Defaults "".
 			 	api: "none", // supported custom apis are defined in jsembed. Defaults "none".
-			 	scaletype: "fit", // update window.canvasScale on window resize? Defaults "fit". Also supports "fill", "fillto" and "none."
-			 	indexroot: "true", // use the current index url as the path root? If false uses domain root instead. Defaults false (use domain root).			 	
+			 	scaletype: "fit", // update window.canvasScale on window resize? Defaults "fit". 
+	// Also supports "fill", "fillto" and "none."
+			 	indexroot: "true", // use the current index url as the path root? 
+	//If false uses domain root instead. Defaults false (use domain root).			 	
 			 	//allowtouchmove: "false", // allow the page to scroll when user drags or swipes? Defaults to false.
 			 	//maxwidth: 1024, //The maximum width to scale the canvas to. Only works with fillto.
 			 	//maxheight: 640, //The maximum height to scale the canvas to. Only works with fillto.  		
-			 	//libs: ["flambe.js"] // array of libs to embed before trying to launch app. Defaults []. Libs will load from base url unless you set libsIgnoreBase: "true" param.
+			 	//libs: ["flambe.js"] // array of libs to embed before trying to launch app. 
+	//Defaults []. Libs will load from base url unless you set libsIgnoreBase: "true" param.
 			}			
 			// Attributes will be set on the embed target for use by the app. "base" will be set as well.
 			var attr = {				
@@ -43,9 +46,10 @@ Sample Embed
 	</head>
 	<body style="padding: 0; margin: 0; background-color:#000000">
 		<div id="embedtarget"></div>	
-</body></html>
+	</body>
+</html>
 ```
 
-COMING SOON
+Coming Soon
 ========
 More details examples coming soon!
