@@ -16,7 +16,7 @@ remotely communicating with your embeded application through "inform" events, ex
 
 Sample Embed
 ========
-...
+```
 <html><body>
 	<head>
 		<title>JSEmbed Example Embed</title>
@@ -44,7 +44,7 @@ Sample Embed
 	<body style="padding: 0; margin: 0; background-color:#000000">
 		<div id="embedtarget"></div>	
 </body></html>
-...
+```
 
 COMING SOON
 ========
