@@ -77,6 +77,7 @@ var jsembed = function()
 	var API_NONE 			= "none";
 	var API_HAXE_NME 		= "nme";
 	var API_HAXE_FLAMBE 	= "flambe";
+	var API_PHASER			= "phaser";
 	var API_CONSTRUCT_2 	= "c2";
 	var API_TRESENSA		= "tresensa";
 	var API_METHOD			= "method";
@@ -516,6 +517,9 @@ var jsembed = function()
 			} else if(api.toLowerCase()== "function" || api.toLowerCase()== "func" || api.toLowerCase()== "method")
 			{
 				return API_METHOD;
+			} else if(api.toLowerCase()== "phaser")
+			{
+				return API_PHASER;
 			}
 		}
 		return API_NONE;
@@ -1093,6 +1097,7 @@ var jsembed = function()
 			case API_HAXE_NME:
 			case API_NONE:
 			case API_METHOD:
+			case API_PHASER:
 			default:
 				break;
 		}
@@ -1146,6 +1151,10 @@ var jsembed = function()
 				if(params.height==null) 	params.height = heightIdeal;				
 				appJs(params);
 				return true;
+			case API_PHASER:
+                app.src = fixUrl(appJs);
+                embedScalingScript();
+				return true;
 			default:
 			case API_NONE:				
 				app.src = fixUrl(appJs);
@@ -1181,6 +1190,7 @@ var jsembed = function()
 			case API_HAXE_FLAMBE:
 			case API_NONE:
 			case API_METHOD:
+			case API_PHASER:
 			default:
 				// Nothing.
 				break;
